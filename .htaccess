@@ -1,0 +1,20 @@
+# Eventure Backend & AdminLTE Apache Configuration
+Options -Indexes
+ServerSignature Off
+
+# Enable CORS for API directory
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-API-KEY"
+</IfModule>
+
+# Protect sensitive files
+<FilesMatch "(config\.php|db\.php|\.sql|\.env|\.git)">
+    Require all denied
+</FilesMatch>
+
+# PHP Execution & Upload limits
+php_value upload_max_filesize 50M
+php_value post_max_size 55M
+php_value memory_limit 128M

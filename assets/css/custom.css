@@ -1,0 +1,207 @@
+/* Eventure Luxury Dark/Gold Theme overrides for AdminLTE 3 */
+:root {
+  --eventure-gold: #d4af37;
+  --eventure-gold-light: #c89d42;
+  --eventure-gold-dark: #aa7c11;
+  --eventure-black: #0a0a0b;
+  --eventure-card: #121215;
+  --eventure-border: #2c2c31;
+  --eventure-ivory: #f7f3ec;
+  --eventure-mist: #a8a29a;
+}
+
+body.dark-mode {
+  background-color: var(--eventure-black) !important;
+  color: var(--eventure-ivory) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.brand-link {
+  border-bottom: 1px solid var(--eventure-border) !important;
+  background-color: var(--eventure-black) !important;
+  padding: 0.95rem 1rem !important;
+}
+
+.brand-text {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 1.45rem !important;
+  letter-spacing: 0.15em !important;
+  color: var(--eventure-gold) !important;
+  font-weight: 500 !important;
+}
+
+.main-sidebar {
+  background-color: var(--eventure-black) !important;
+  border-right: 1px solid var(--eventure-border) !important;
+}
+
+.main-header {
+  background-color: var(--eventure-card) !important;
+  border-bottom: 1px solid var(--eventure-border) !important;
+}
+
+.content-wrapper {
+  background-color: var(--eventure-black) !important;
+}
+
+.card {
+  background-color: var(--eventure-card) !important;
+  border: 1px solid var(--eventure-border) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.card-header {
+  border-bottom: 1px solid var(--eventure-border) !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  padding: 1rem 1.25rem !important;
+}
+
+.card-title {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--eventure-gold) !important;
+}
+
+.card-footer {
+  border-top: 1px solid var(--eventure-border) !important;
+  background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
+/* Custom Gold Button */
+.btn-gold {
+  background: linear-gradient(135deg, var(--eventure-gold-light), var(--eventure-gold), var(--eventure-gold-dark)) !important;
+  color: #0a0a0b !important;
+  font-weight: 600 !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 0.55rem 1.4rem !important;
+  letter-spacing: 0.05em !important;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3) !important;
+  transition: all 0.25s ease !important;
+}
+.btn-gold:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45) !important;
+  color: #000 !important;
+}
+
+.btn-outline-gold {
+  border: 1px solid var(--eventure-gold) !important;
+  color: var(--eventure-gold) !important;
+  background: transparent !important;
+  border-radius: 999px !important;
+  transition: all 0.25s ease !important;
+}
+.btn-outline-gold:hover {
+  background: var(--eventure-gold) !important;
+  color: #0a0a0b !important;
+}
+
+/* Inputs & Form Controls */
+.form-control, .custom-select {
+  background-color: #1b1b1f !important;
+  border: 1px solid var(--eventure-border) !important;
+  color: var(--eventure-ivory) !important;
+  border-radius: 8px !important;
+}
+.form-control:focus, .custom-select:focus {
+  border-color: var(--eventure-gold) !important;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25) !important;
+}
+
+label {
+  font-size: 0.78rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: var(--eventure-mist) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.35rem !important;
+}
+
+/* Sidebar navigation */
+.nav-sidebar .nav-item .nav-link {
+  border-radius: 8px !important;
+  color: var(--eventure-ivory) !important;
+  padding: 0.65rem 1rem !important;
+  margin-bottom: 0.2rem !important;
+  font-size: 0.92rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-sidebar .nav-item .nav-link i {
+  color: var(--eventure-gold) !important;
+  width: 22px !important;
+}
+
+.nav-sidebar .nav-item .nav-link.active {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.18), transparent) !important;
+  border-left: 3px solid var(--eventure-gold) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.nav-sidebar .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: var(--eventure-gold) !important;
+}
+
+.nav-header {
+  font-size: 0.68rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2em !important;
+  color: var(--eventure-gold) !important;
+  padding: 1rem 1rem 0.35rem !important;
+  font-weight: 700 !important;
+}
+
+/* CDN Image Uploader Widget */
+.cdn-image-box {
+  border: 1px dashed var(--eventure-border);
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.015);
+  margin-bottom: 1rem;
+}
+.cdn-thumb-preview {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--eventure-border);
+  background-color: #000;
+  display: block;
+}
+
+/* Tables */
+.table {
+  color: var(--eventure-ivory) !important;
+}
+.table td, .table th {
+  border-top: 1px solid var(--eventure-border) !important;
+  vertical-align: middle !important;
+}
+.table thead th {
+  border-bottom: 2px solid var(--eventure-border) !important;
+  color: var(--eventure-gold) !important;
+  text-transform: uppercase !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.12em !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--eventure-black);
+}
+::-webkit-scrollbar-thumb {
+  background: #333339;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--eventure-gold);
+}
