@@ -1,4 +1,5 @@
 # Eventure Backend & AdminLTE Apache Configuration
+DirectoryIndex index.php index.html
 Options -Indexes
 ServerSignature Off
 
