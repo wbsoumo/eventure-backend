@@ -28,16 +28,16 @@ require_once __DIR__ . '/../includes/header.php';
 <div class="card">
   <div class="card-header d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
-      <h3 class="card-title text-gold mr-3"><i class="fas fa-calendar-star mr-2"></i>Signature Projects</h3>
+      <h3 class="card-title text-primary mr-3"><i class="fas fa-calendar-star mr-2"></i>Signature Projects</h3>
       <!-- Category Filter -->
       <div class="btn-group btn-group-sm">
-        <a href="<?= BASE_URL ?>/events/index.php" class="btn <?= empty($category) ? 'btn-gold' : 'btn-outline-secondary' ?>">All</a>
-        <a href="<?= BASE_URL ?>/events/index.php?category=Wedding" class="btn <?= $category === 'Wedding' ? 'btn-gold' : 'btn-outline-secondary' ?>">Weddings</a>
-        <a href="<?= BASE_URL ?>/events/index.php?category=Corporate" class="btn <?= $category === 'Corporate' ? 'btn-gold' : 'btn-outline-secondary' ?>">Corporate</a>
+        <a href="<?= BASE_URL ?>/events/index.php" class="btn <?= empty($category) ? 'btn-primary' : 'btn-outline-secondary' ?>">All</a>
+        <a href="<?= BASE_URL ?>/events/index.php?category=Wedding" class="btn <?= $category === 'Wedding' ? 'btn-primary' : 'btn-outline-secondary' ?>">Weddings</a>
+        <a href="<?= BASE_URL ?>/events/index.php?category=Corporate" class="btn <?= $category === 'Corporate' ? 'btn-primary' : 'btn-outline-secondary' ?>">Corporate</a>
       </div>
     </div>
     <div>
-      <a href="<?= BASE_URL ?>/events/create.php" class="btn btn-gold btn-sm">
+      <a href="<?= BASE_URL ?>/events/create.php" class="btn btn-primary btn-sm">
         <i class="fas fa-plus mr-1"></i> Add New Event
       </a>
     </div>
@@ -82,7 +82,7 @@ require_once __DIR__ . '/../includes/header.php';
                   <?= e($ev['category']) ?>
                 </span>
               </td>
-              <td><i class="fas fa-map-marker-alt text-gold mr-1"></i> <?= e($ev['location']) ?></td>
+              <td><i class="fas fa-map-marker-alt text-primary mr-1"></i> <?= e($ev['location']) ?></td>
               <td>
                 <?= e($ev['client'] ?: '—') ?>
                 <small class="text-muted d-block"><?= e($ev['year']) ?></small>

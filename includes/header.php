@@ -32,31 +32,31 @@ try {
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- AdminLTE 3.2 CSS (Dark mode base) -->
+  <!-- AdminLTE 3.2 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
 
-  <!-- SweetAlert2 Dark Theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
-  <!-- Custom Eventure Luxury Gold Theme -->
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/custom.css">
 </head>
-<body class="hold-transition sidebar-mini layout-fixed dark-mode">
+<body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
   <!-- Top Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?= BASE_URL ?>/dashboard.php" class="nav-link"><i class="fas fa-home mr-1"></i> Dashboard</a>
+        <a href="<?= BASE_URL ?>/dashboard.php" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="https://myeventure.in" target="_blank" class="nav-link text-warning">
-          <i class="fas fa-external-link-alt mr-1"></i> View Live Site
+        <a href="https://myeventure.in" target="_blank" class="nav-link text-primary font-weight-bold">
+          <i class="fas fa-external-link-alt mr-1"></i> Live Website
         </a>
       </li>
     </ul>
@@ -83,20 +83,20 @@ try {
       <!-- User Profile Dropdown -->
       <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-          <i class="fas fa-user-circle text-gold mr-1"></i>
+          <i class="fas fa-user-circle text-primary mr-1"></i>
           <span class="d-none d-md-inline"><?= e($user['name'] ?? 'Admin') ?></span>
         </a>
-        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right card-primary">
-          <li class="user-header bg-dark">
-            <i class="fas fa-user-shield fa-3x text-warning mb-2"></i>
+        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <li class="user-header bg-primary">
+            <i class="fas fa-user-shield fa-3x text-white mb-2"></i>
             <p>
               <?= e($user['name'] ?? 'Administrator') ?>
-              <small class="text-muted"><?= e($user['email'] ?? '') ?></small>
+              <small class="text-white-50"><?= e($user['email'] ?? '') ?></small>
             </p>
           </li>
-          <li class="user-footer bg-dark border-top border-secondary">
-            <a href="<?= BASE_URL ?>/settings/site.php" class="btn btn-outline-secondary btn-sm">Settings</a>
-            <a href="<?= BASE_URL ?>/logout.php" class="btn btn-danger btn-sm float-right">Logout</a>
+          <li class="user-footer">
+            <a href="<?= BASE_URL ?>/settings/site.php" class="btn btn-default btn-flat">Settings</a>
+            <a href="<?= BASE_URL ?>/logout.php" class="btn btn-danger btn-flat float-right">Logout</a>
           </li>
         </ul>
       </li>
@@ -113,13 +113,13 @@ try {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-gold" style="font-family: 'Cormorant Garamond', serif; font-size: 2rem;">
+            <h1 class="m-0 text-dark" style="font-weight: 600;">
               <?= e($pageTitle) ?>
             </h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?= BASE_URL ?>/dashboard.php" class="text-gold">Home</a></li>
+              <li class="breadcrumb-item"><a href="<?= BASE_URL ?>/dashboard.php">Home</a></li>
               <li class="breadcrumb-item active"><?= e($pageTitle) ?></li>
             </ol>
           </div>

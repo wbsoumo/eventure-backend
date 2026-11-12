@@ -80,7 +80,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-9 mx-auto">
     <div class="card card-outline card-warning">
       <div class="card-header d-flex justify-content-between align-items-center">
-        <h3 class="card-title text-gold font-weight-bold"><i class="fas fa-edit mr-2"></i>Edit Event: <?= e($event['title']) ?></h3>
+        <h3 class="card-title text-primary font-weight-bold"><i class="fas fa-edit mr-2"></i>Edit Event: <?= e($event['title']) ?></h3>
         <span class="badge badge-secondary">ID #<?= $event['id'] ?></span>
       </div>
 
@@ -158,8 +158,8 @@ require_once __DIR__ . '/../includes/header.php';
               <div class="input-group mb-2">
                 <input type="text" id="eventImageInput" name="hero_image" class="form-control form-control-sm" value="<?= e($event['hero_image']) ?>" required>
               </div>
-              <div class="d-flex align-items-center justify-content-between pt-2 border-top border-secondary">
-                <label class="btn btn-outline-gold btn-sm mb-0 cursor-pointer">
+              <div class="d-flex align-items-center justify-content-between pt-2 border-top border-light">
+                <label class="btn btn-outline-primary btn-sm mb-0 cursor-pointer">
                   <i class="fas fa-cloud-upload-alt mr-1"></i> Replace Image on CDN
                   <input type="file" class="d-none" data-cdn-upload data-target-input="eventImageInput" data-target-preview="eventImagePreview" data-folder="portfolio" accept="image/*">
                 </label>
@@ -196,9 +196,9 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
 
-        <div class="card-footer bg-dark border-secondary text-right">
+        <div class="card-footer bg-light text-dark border-light text-right">
           <a href="<?= BASE_URL ?>/events/index.php" class="btn btn-secondary mr-2">Cancel</a>
-          <button type="submit" class="btn btn-gold px-4">
+          <button type="submit" class="btn btn-primary px-4">
             <i class="fas fa-save mr-1"></i> Update Event
           </button>
         </div>

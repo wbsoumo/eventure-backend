@@ -15,7 +15,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-8 mx-auto">
     <div class="card card-outline card-warning">
       <div class="card-header">
-        <h3 class="card-title text-gold font-weight-bold">
+        <h3 class="card-title text-primary font-weight-bold">
           <i class="fas fa-cloud-upload-alt mr-2"></i>Upload Assets to CDN
         </h3>
       </div>
@@ -38,12 +38,12 @@ require_once __DIR__ . '/../includes/header.php';
           </select>
         </div>
 
-        <div class="p-5 border border-secondary rounded text-center bg-dark" id="dropArea" style="cursor: pointer; border-style: dashed !important; border-width: 2px !important;">
-          <i class="fas fa-cloud-upload-alt fa-4x text-gold mb-3"></i>
+        <div class="p-5 border border-light rounded text-center bg-light text-dark" id="dropArea" style="cursor: pointer; border-style: dashed !important; border-width: 2px !important;">
+          <i class="fas fa-cloud-upload-alt fa-4x text-primary mb-3"></i>
           <h4>Click to browse or drag and drop image here</h4>
           <p class="text-muted text-sm mb-3">Supports JPG, PNG, WebP, SVG, AVIF, MP4 (Max 50MB)</p>
           <input type="file" id="mediaFileInput" accept="image/*,video/mp4" class="d-none">
-          <button type="button" class="btn btn-outline-gold" onclick="document.getElementById('mediaFileInput').click()">
+          <button type="button" class="btn btn-outline-primary" onclick="document.getElementById('mediaFileInput').click()">
             <i class="fas fa-folder-open mr-1"></i> Choose File
           </button>
         </div>
@@ -58,12 +58,12 @@ require_once __DIR__ . '/../includes/header.php';
         <div id="mediaUploadSuccess" class="mt-4 p-3 bg-black border border-success rounded" style="display: none;">
           <h5 class="text-success"><i class="fas fa-check-circle mr-1"></i> Asset Uploaded Successfully!</h5>
           <div class="text-center my-3">
-            <img id="mediaUploadedPreview" src="" alt="Preview" style="max-height: 200px; border-radius: 8px;" class="border border-secondary">
+            <img id="mediaUploadedPreview" src="" alt="Preview" style="max-height: 200px; border-radius: 8px;" class="border border-light">
           </div>
           <div class="input-group">
             <input type="text" id="mediaCdnResultUrl" class="form-control" readonly>
             <div class="input-group-append">
-              <button class="btn btn-gold" type="button" onclick="copyCdnLink()">
+              <button class="btn btn-primary" type="button" onclick="copyCdnLink()">
                 <i class="far fa-copy mr-1"></i> Copy Link
               </button>
             </div>

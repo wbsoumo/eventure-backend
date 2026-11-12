@@ -75,7 +75,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-8">
     <div class="card card-outline card-warning">
       <div class="card-header">
-        <h3 class="card-title text-gold font-weight-bold">
+        <h3 class="card-title text-primary font-weight-bold">
           <i class="fas fa-compass mr-2"></i>Header Navigation Menu Items
         </h3>
       </div>
@@ -100,7 +100,7 @@ require_once __DIR__ . '/../includes/header.php';
               <?php foreach ($items as $item): ?>
                 <tr>
                   <td>
-                    <input type="text" name="items[<?= $item['id'] ?>][num_prefix]" class="form-control form-control-sm text-center font-weight-bold text-gold" value="<?= e($item['num_prefix']) ?>">
+                    <input type="text" name="items[<?= $item['id'] ?>][num_prefix]" class="form-control form-control-sm text-center font-weight-bold text-primary" value="<?= e($item['num_prefix']) ?>">
                   </td>
                   <td>
                     <input type="text" name="items[<?= $item['id'] ?>][name]" class="form-control form-control-sm font-weight-bold" value="<?= e($item['name']) ?>" required>
@@ -125,8 +125,8 @@ require_once __DIR__ . '/../includes/header.php';
           </table>
         </div>
 
-        <div class="card-footer bg-dark border-secondary text-right">
-          <button type="submit" class="btn btn-gold btn-sm px-4">
+        <div class="card-footer bg-light text-dark border-light text-right">
+          <button type="submit" class="btn btn-primary btn-sm px-4">
             <i class="fas fa-save mr-1"></i> Save Menu Ordering &amp; Labels
           </button>
         </div>
@@ -138,7 +138,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-4">
     <div class="card card-outline card-secondary">
       <div class="card-header">
-        <h3 class="card-title text-gold font-weight-bold"><i class="fas fa-plus-circle mr-1"></i>Add Menu Item</h3>
+        <h3 class="card-title text-primary font-weight-bold"><i class="fas fa-plus-circle mr-1"></i>Add Menu Item</h3>
       </div>
       <form action="" method="post">
         <?= csrf_field() ?>
@@ -166,8 +166,8 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
 
-        <div class="card-footer bg-dark border-secondary">
-          <button type="submit" class="btn btn-outline-gold btn-block btn-sm">
+        <div class="card-footer bg-light text-dark border-light">
+          <button type="submit" class="btn btn-outline-primary btn-block btn-sm">
             <i class="fas fa-plus mr-1"></i> Add to Menu
           </button>
         </div>

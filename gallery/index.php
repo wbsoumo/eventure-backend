@@ -58,7 +58,7 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- Upload New Photo Card -->
 <div class="card card-outline card-warning mb-4">
   <div class="card-header">
-    <h3 class="card-title text-gold"><i class="fas fa-upload mr-2"></i>Add New Photo to Archive</h3>
+    <h3 class="card-title text-primary"><i class="fas fa-upload mr-2"></i>Add New Photo to Archive</h3>
   </div>
   <div class="card-body">
     <form action="" method="post">
@@ -94,7 +94,7 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
 
         <div class="col-md-2">
-          <label class="btn btn-outline-gold btn-block mb-0 cursor-pointer">
+          <label class="btn btn-outline-primary btn-block mb-0 cursor-pointer">
             <i class="fas fa-cloud-upload-alt mr-1"></i> Pick File
             <input type="file" class="d-none" data-cdn-upload data-target-input="galleryImageUrl" data-folder="gallery" accept="image/*">
           </label>
@@ -102,7 +102,7 @@ require_once __DIR__ . '/../includes/header.php';
       </div>
 
       <div class="mt-3 text-right">
-        <button type="submit" class="btn btn-gold btn-sm px-4">
+        <button type="submit" class="btn btn-primary btn-sm px-4">
           <i class="fas fa-plus mr-1"></i> Add to Visual Gallery
         </button>
       </div>
@@ -114,12 +114,12 @@ require_once __DIR__ . '/../includes/header.php';
 <div class="card">
   <div class="card-header d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
-      <h3 class="card-title text-gold mr-3"><i class="fas fa-images mr-2"></i>Archived Photographs</h3>
+      <h3 class="card-title text-primary mr-3"><i class="fas fa-images mr-2"></i>Archived Photographs</h3>
       <div class="btn-group btn-group-sm">
-        <a href="<?= BASE_URL ?>/gallery/index.php" class="btn <?= empty($catFilter) ? 'btn-gold' : 'btn-outline-secondary' ?>">All</a>
-        <a href="<?= BASE_URL ?>/gallery/index.php?category=weddings" class="btn <?= $catFilter === 'weddings' ? 'btn-gold' : 'btn-outline-secondary' ?>">Weddings</a>
-        <a href="<?= BASE_URL ?>/gallery/index.php?category=corporate" class="btn <?= $catFilter === 'corporate' ? 'btn-gold' : 'btn-outline-secondary' ?>">Corporate</a>
-        <a href="<?= BASE_URL ?>/gallery/index.php?category=sangeet" class="btn <?= $catFilter === 'sangeet' ? 'btn-gold' : 'btn-outline-secondary' ?>">Sangeet</a>
+        <a href="<?= BASE_URL ?>/gallery/index.php" class="btn <?= empty($catFilter) ? 'btn-primary' : 'btn-outline-secondary' ?>">All</a>
+        <a href="<?= BASE_URL ?>/gallery/index.php?category=weddings" class="btn <?= $catFilter === 'weddings' ? 'btn-primary' : 'btn-outline-secondary' ?>">Weddings</a>
+        <a href="<?= BASE_URL ?>/gallery/index.php?category=corporate" class="btn <?= $catFilter === 'corporate' ? 'btn-primary' : 'btn-outline-secondary' ?>">Corporate</a>
+        <a href="<?= BASE_URL ?>/gallery/index.php?category=sangeet" class="btn <?= $catFilter === 'sangeet' ? 'btn-primary' : 'btn-outline-secondary' ?>">Sangeet</a>
       </div>
     </div>
   </div>
@@ -133,15 +133,15 @@ require_once __DIR__ . '/../includes/header.php';
       <?php else: ?>
         <?php foreach ($photos as $ph): ?>
           <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-            <div class="position-relative border border-secondary rounded overflow-hidden shadow-sm bg-dark">
+            <div class="position-relative border border-light rounded overflow-hidden shadow-sm bg-light text-dark">
               <img src="<?= e($ph['image_url']) ?>" alt="" style="width: 100%; height: 140px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/200x140/121215/d4af37?text=Image'">
               
               <div class="p-2">
                 <span class="badge badge-secondary text-xs text-uppercase mb-1"><?= e($ph['category']) ?></span>
                 <p class="text-xs text-truncate mb-2" title="<?= e($ph['title']) ?>"><?= e($ph['title']) ?></p>
                 
-                <div class="d-flex justify-content-between align-items-center pt-1 border-top border-secondary">
-                  <a href="<?= e($ph['image_url']) ?>" target="_blank" class="text-xs text-gold"><i class="fas fa-expand"></i> View</a>
+                <div class="d-flex justify-content-between align-items-center pt-1 border-top border-light">
+                  <a href="<?= e($ph['image_url']) ?>" target="_blank" class="text-xs text-primary"><i class="fas fa-expand"></i> View</a>
                   <a href="<?= BASE_URL ?>/gallery/index.php?delete=<?= $ph['id'] ?>&csrf_token=<?= csrf_token() ?>" class="text-xs text-danger" onclick="return confirm('Delete this photo?');"><i class="fas fa-trash"></i> Delete</a>
                 </div>
               </div>

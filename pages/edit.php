@@ -104,7 +104,7 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="card card-outline card-warning">
       <div class="card-header d-flex justify-content-between align-items-center">
         <div>
-          <h3 class="card-title text-gold font-weight-bold">
+          <h3 class="card-title text-primary font-weight-bold">
             <i class="fas fa-edit mr-2"></i><?= e($page['title']) ?> Content Editor
           </h3>
           <span class="badge badge-secondary ml-2">Slug: <?= e($slug) ?></span>
@@ -121,8 +121,8 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="card-body">
           <!-- SECTION 1: HERO & HEADER BANNER -->
-          <div class="callout callout-warning bg-dark border-secondary mb-4">
-            <h5 class="text-gold"><i class="fas fa-image mr-2"></i>1. Hero Header &amp; Atmosphere</h5>
+          <div class="callout callout-warning bg-light text-dark border-light mb-4">
+            <h5 class="text-primary"><i class="fas fa-image mr-2"></i>1. Hero Header &amp; Atmosphere</h5>
             <p class="text-muted text-sm">Control the full-bleed atmospheric photograph, eyebrow tagline, and display typography.</p>
           </div>
 
@@ -163,8 +163,8 @@ require_once __DIR__ . '/../includes/header.php';
                   </div>
 
                   <!-- CDN Direct Uploader Button -->
-                  <div class="d-flex align-items-center justify-content-between mt-2 pt-2 border-top border-secondary">
-                    <label class="btn btn-outline-gold btn-sm mb-0 cursor-pointer">
+                  <div class="d-flex align-items-center justify-content-between mt-2 pt-2 border-top border-light">
+                    <label class="btn btn-outline-primary btn-sm mb-0 cursor-pointer">
                       <i class="fas fa-cloud-upload-alt mr-1"></i> Upload New Image to CDN
                       <input type="file" class="d-none" data-cdn-upload data-target-input="heroImageInput" data-target-preview="heroImagePreview" data-folder="<?= in_array($slug, ['weddings', 'corporate']) ? $slug : 'general' ?>" accept="image/*">
                     </label>
@@ -175,23 +175,23 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
           </div>
 
-          <hr class="border-secondary my-5">
+          <hr class="border-light my-5">
 
           <!-- SECTION 2: PAGE-SPECIFIC SEGMENTS / CARDS -->
-          <div class="callout callout-info bg-dark border-secondary mb-4">
-            <h5 class="text-gold"><i class="fas fa-th-large mr-2"></i>2. Segment Cards &amp; Content Modules</h5>
+          <div class="callout callout-info bg-light text-dark border-light mb-4">
+            <h5 class="text-primary"><i class="fas fa-th-large mr-2"></i>2. Segment Cards &amp; Content Modules</h5>
             <p class="text-muted text-sm">Edit cards, capabilities, metrics, and structured JSON sections that populate this page.</p>
           </div>
 
           <?php if (empty($sections)): ?>
-            <div class="alert alert-dark border border-secondary text-muted">
+            <div class="alert alert-dark border border-light text-muted">
               <i class="fas fa-info-circle mr-1"></i> This page uses dynamic content from global databases (Portfolio / Gallery). Manage them via the sidebar menus.
             </div>
           <?php else: ?>
             <?php foreach ($sections as $sec): ?>
-              <div class="card bg-dark border border-secondary mb-4">
-                <div class="card-header bg-dark d-flex justify-content-between align-items-center">
-                  <strong class="text-gold">
+              <div class="card bg-light text-dark border border-light mb-4">
+                <div class="card-header bg-light text-dark d-flex justify-content-between align-items-center">
+                  <strong class="text-primary">
                     <i class="fas fa-cubes mr-2"></i><?= e($sec['title'] ?: ucfirst($sec['section_key'])) ?>
                   </strong>
                   <span class="badge badge-secondary"><?= e($sec['section_key']) ?></span>
@@ -212,11 +212,11 @@ require_once __DIR__ . '/../includes/header.php';
             <?php endforeach; ?>
           <?php endif; ?>
 
-          <hr class="border-secondary my-5">
+          <hr class="border-light my-5">
 
           <!-- SECTION 3: CALL TO ACTION (CTA) AT PAGE BOTTOM -->
-          <div class="callout callout-warning bg-dark border-secondary mb-4">
-            <h5 class="text-gold"><i class="fas fa-bullhorn mr-2"></i>3. Bottom Call to Action (CTA) Banner</h5>
+          <div class="callout callout-warning bg-light text-dark border-light mb-4">
+            <h5 class="text-primary"><i class="fas fa-bullhorn mr-2"></i>3. Bottom Call to Action (CTA) Banner</h5>
             <p class="text-muted text-sm">The closing statement and invitation at the bottom of the page.</p>
           </div>
 
@@ -254,9 +254,9 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
 
-        <div class="card-footer bg-dark border-secondary text-right">
+        <div class="card-footer bg-light text-dark border-light text-right">
           <a href="<?= BASE_URL ?>/dashboard.php" class="btn btn-secondary mr-2">Cancel</a>
-          <button type="submit" class="btn btn-gold px-4">
+          <button type="submit" class="btn btn-primary px-4">
             <i class="fas fa-save mr-1"></i> Save Changes to <?= e($page['title']) ?>
           </button>
         </div>

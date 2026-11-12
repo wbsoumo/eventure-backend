@@ -76,12 +76,12 @@ require_once __DIR__ . '/../includes/header.php';
 <div class="card card-outline card-warning">
   <div class="card-header d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
-      <h3 class="card-title text-gold mr-3"><i class="fas fa-inbox mr-2"></i>Event Inquiries Inbox</h3>
+      <h3 class="card-title text-primary mr-3"><i class="fas fa-inbox mr-2"></i>Event Inquiries Inbox</h3>
       <div class="btn-group btn-group-sm">
-        <a href="<?= BASE_URL ?>/inquiries/index.php" class="btn <?= empty($statusFilter) ? 'btn-gold' : 'btn-outline-secondary' ?>">All</a>
-        <a href="<?= BASE_URL ?>/inquiries/index.php?status=new" class="btn <?= $statusFilter === 'new' ? 'btn-gold' : 'btn-outline-secondary' ?>">New</a>
-        <a href="<?= BASE_URL ?>/inquiries/index.php?status=contacted" class="btn <?= $statusFilter === 'contacted' ? 'btn-gold' : 'btn-outline-secondary' ?>">Contacted</a>
-        <a href="<?= BASE_URL ?>/inquiries/index.php?status=booked" class="btn <?= $statusFilter === 'booked' ? 'btn-gold' : 'btn-outline-secondary' ?>">Booked</a>
+        <a href="<?= BASE_URL ?>/inquiries/index.php" class="btn <?= empty($statusFilter) ? 'btn-primary' : 'btn-outline-secondary' ?>">All</a>
+        <a href="<?= BASE_URL ?>/inquiries/index.php?status=new" class="btn <?= $statusFilter === 'new' ? 'btn-primary' : 'btn-outline-secondary' ?>">New</a>
+        <a href="<?= BASE_URL ?>/inquiries/index.php?status=contacted" class="btn <?= $statusFilter === 'contacted' ? 'btn-primary' : 'btn-outline-secondary' ?>">Contacted</a>
+        <a href="<?= BASE_URL ?>/inquiries/index.php?status=booked" class="btn <?= $statusFilter === 'booked' ? 'btn-primary' : 'btn-outline-secondary' ?>">Booked</a>
       </div>
     </div>
     <div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/../includes/header.php';
             <tr>
               <td>
                 <strong class="text-white"><?= e($l['name']) ?></strong><br>
-                <small class="text-gold"><i class="fas fa-phone mr-1"></i><?= e($l['phone']) ?></small><br>
+                <small class="text-primary"><i class="fas fa-phone mr-1"></i><?= e($l['phone']) ?></small><br>
                 <small class="text-muted"><i class="fas fa-envelope mr-1"></i><?= e($l['email']) ?></small>
               </td>
               <td>
@@ -129,7 +129,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <i class="fas fa-map-marker-alt text-warning mr-1"></i> <?= e($l['city'] ?: 'Kolkata') ?><br>
                 <small class="text-muted"><i class="far fa-calendar-alt mr-1"></i> <?= e($l['target_date'] ?: 'Flexible') ?></small>
               </td>
-              <td class="text-gold font-weight-bold">
+              <td class="text-primary font-weight-bold">
                 <?= e($l['budget'] ?: 'TBD') ?>
               </td>
               <td>
@@ -166,9 +166,9 @@ require_once __DIR__ . '/../includes/header.php';
                 <!-- Modal for Lead Details & Status Change -->
                 <div class="modal fade text-left" id="leadModal<?= $l['id'] ?>" tabindex="-1" role="dialog">
                   <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content bg-dark border-secondary">
-                      <div class="modal-header border-secondary">
-                        <h5 class="modal-title text-gold font-weight-bold">
+                    <div class="modal-content bg-light text-dark border-light">
+                      <div class="modal-header border-light">
+                        <h5 class="modal-title text-primary font-weight-bold">
                           <i class="fas fa-briefcase mr-2"></i>Event Brief: <?= e($l['name']) ?>
                         </h5>
                         <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
@@ -186,7 +186,7 @@ require_once __DIR__ . '/../includes/header.php';
                             </div>
                             <div class="col-md-6">
                               <label>Event Type &amp; Budget</label>
-                              <p class="text-white"><?= e($l['event_type']) ?> &mdash; <span class="text-gold"><?= e($l['budget']) ?></span></p>
+                              <p class="text-white"><?= e($l['event_type']) ?> &mdash; <span class="text-primary"><?= e($l['budget']) ?></span></p>
                             </div>
                             <div class="col-md-6">
                               <label>Destination &amp; Date</label>
@@ -200,7 +200,7 @@ require_once __DIR__ . '/../includes/header.php';
 
                           <div class="form-group">
                             <label>Client's Notes &amp; Message</label>
-                            <div class="p-3 bg-black border border-secondary rounded text-sm text-white">
+                            <div class="p-3 bg-black border border-light rounded text-sm text-white">
                               <?= nl2br(e($l['message'] ?: 'No additional notes provided.')) ?>
                             </div>
                           </div>
@@ -227,9 +227,9 @@ require_once __DIR__ . '/../includes/header.php';
                           </div>
                         </div>
 
-                        <div class="modal-footer border-secondary">
+                        <div class="modal-footer border-light">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="submit" class="btn btn-gold">Save Status &amp; Notes</button>
+                          <button type="submit" class="btn btn-primary">Save Status &amp; Notes</button>
                         </div>
                       </form>
                     </div>

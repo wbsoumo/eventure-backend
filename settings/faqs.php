@@ -48,7 +48,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-8">
     <div class="card card-outline card-warning">
       <div class="card-header">
-        <h3 class="card-title text-gold font-weight-bold"><i class="fas fa-question-circle mr-2"></i>Frequently Asked Questions</h3>
+        <h3 class="card-title text-primary font-weight-bold"><i class="fas fa-question-circle mr-2"></i>Frequently Asked Questions</h3>
       </div>
       <div class="card-body p-0 table-responsive">
         <table class="table table-hover">
@@ -85,7 +85,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-4">
     <div class="card card-outline card-secondary">
       <div class="card-header">
-        <h3 class="card-title text-gold font-weight-bold"><i class="fas fa-plus mr-1"></i>Add New Question</h3>
+        <h3 class="card-title text-primary font-weight-bold"><i class="fas fa-plus mr-1"></i>Add New Question</h3>
       </div>
       <form action="" method="post">
         <?= csrf_field() ?>
@@ -118,8 +118,8 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
 
-        <div class="card-footer bg-dark border-secondary">
-          <button type="submit" class="btn btn-outline-gold btn-block btn-sm">
+        <div class="card-footer bg-light text-dark border-light">
+          <button type="submit" class="btn btn-outline-primary btn-block btn-sm">
             <i class="fas fa-check mr-1"></i> Save FAQ
           </button>
         </div>

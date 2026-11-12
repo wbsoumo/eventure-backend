@@ -5,8 +5,8 @@
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  <footer class="main-footer bg-dark border-top border-secondary text-sm">
-    <strong>Copyright &copy; <?= date('Y') ?> <a href="https://myeventure.in" target="_blank" class="text-gold">Eventure Experiences LLP</a>.</strong>
+  <footer class="main-footer bg-light text-dark border-top border-light text-sm">
+    <strong>Copyright &copy; <?= date('Y') ?> <a href="https://myeventure.in" target="_blank" class="text-primary">Eventure Experiences LLP</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 1.0.0 &middot; <span class="text-muted">Kolkata Studio</span>

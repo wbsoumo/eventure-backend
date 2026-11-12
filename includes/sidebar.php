@@ -20,12 +20,23 @@ function is_nav_active(string $path, string $slug = ''): string {
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
   <a href="<?= BASE_URL ?>/dashboard.php" class="brand-link">
-    <i class="fas fa-gem text-warning ml-3 mr-2 fa-lg"></i>
-    <span class="brand-text font-weight-light">EVENTURE</span>
+    <span class="brand-image img-circle elevation-3 d-inline-flex align-items-center justify-content-center bg-primary text-white font-weight-bold" style="width:33px; height:33px; font-size:1.1rem; opacity:0.9;">A</span>
+    <span class="brand-text font-weight-light">AdminLTE 3</span>
   </a>
 
   <!-- Sidebar -->
   <div class="sidebar">
+    <!-- Sidebar user panel -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex align-items-center">
+      <div class="image">
+        <span class="img-circle elevation-2 d-inline-flex align-items-center justify-content-center bg-secondary text-white" style="width:34px; height:34px;">
+          <i class="fas fa-user-shield"></i>
+        </span>
+      </div>
+      <div class="info">
+        <a href="<?= BASE_URL ?>/settings/site.php" class="d-block"><?= e($user['name'] ?? 'Administrator') ?></a>
+      </div>
+    </div>
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">

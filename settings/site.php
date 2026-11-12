@@ -88,7 +88,7 @@ require_once __DIR__ . '/../includes/header.php';
   <div class="col-lg-10 mx-auto">
     <div class="card card-outline card-warning">
       <div class="card-header">
-        <h3 class="card-title text-gold font-weight-bold">
+        <h3 class="card-title text-primary font-weight-bold">
           <i class="fas fa-sliders-h mr-2"></i>Global Website &amp; Footer Configuration
         </h3>
       </div>
@@ -98,7 +98,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="card-body">
           <!-- 1. BRAND IDENTITY -->
-          <h5 class="text-gold border-bottom border-secondary pb-2 mb-3">
+          <h5 class="text-primary border-bottom border-light pb-2 mb-3">
             <i class="fas fa-gem mr-2"></i>1. Brand Identity &amp; Logo
           </h5>
           <div class="row">
@@ -130,8 +130,8 @@ require_once __DIR__ . '/../includes/header.php';
                   <div class="input-group mb-2">
                     <input type="text" id="logoUrlInput" name="logo_url" class="form-control form-control-sm" value="<?= e($settings['logo_url']) ?>" required>
                   </div>
-                  <div class="d-flex align-items-center justify-content-between pt-2 border-top border-secondary">
-                    <label class="btn btn-outline-gold btn-sm mb-0 cursor-pointer">
+                  <div class="d-flex align-items-center justify-content-between pt-2 border-top border-light">
+                    <label class="btn btn-outline-primary btn-sm mb-0 cursor-pointer">
                       <i class="fas fa-cloud-upload-alt mr-1"></i> Upload New Logo to CDN
                       <input type="file" class="d-none" data-cdn-upload data-target-input="logoUrlInput" data-target-preview="logoPreview" data-folder="logos" accept="image/*">
                     </label>
@@ -143,7 +143,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
 
           <!-- 2. CONTACT CHANNELS -->
-          <h5 class="text-gold border-bottom border-secondary pb-2 mb-3 mt-4">
+          <h5 class="text-primary border-bottom border-light pb-2 mb-3 mt-4">
             <i class="fas fa-phone-alt mr-2"></i>2. Contact Details &amp; Direct WhatsApp
           </h5>
           <div class="row">
@@ -174,7 +174,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
 
           <!-- 3. KOLKATA STUDIO ADDRESS -->
-          <h5 class="text-gold border-bottom border-secondary pb-2 mb-3 mt-4">
+          <h5 class="text-primary border-bottom border-light pb-2 mb-3 mt-4">
             <i class="fas fa-map-marker-alt mr-2"></i>3. Studio Address (Kolkata)
           </h5>
           <div class="row">
@@ -217,7 +217,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
 
           <!-- 4. SOCIAL MEDIA CHANNELS -->
-          <h5 class="text-gold border-bottom border-secondary pb-2 mb-3 mt-4">
+          <h5 class="text-primary border-bottom border-light pb-2 mb-3 mt-4">
             <i class="fas fa-share-alt mr-2"></i>4. Social Media Channels
           </h5>
           <div class="row">
@@ -248,7 +248,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
 
           <!-- 5. 4-COLUMN FOOTER STATEMENTS -->
-          <h5 class="text-gold border-bottom border-secondary pb-2 mb-3 mt-4">
+          <h5 class="text-primary border-bottom border-light pb-2 mb-3 mt-4">
             <i class="fas fa-shoe-prints mr-2"></i>5. Footer 4-Column Text &amp; Bottom Bar
           </h5>
           <div class="form-group">
@@ -271,7 +271,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
 
           <!-- 6. SEO METADATA -->
-          <h5 class="text-gold border-bottom border-secondary pb-2 mb-3 mt-4">
+          <h5 class="text-primary border-bottom border-light pb-2 mb-3 mt-4">
             <i class="fas fa-search mr-2"></i>6. Global SEO Defaults
           </h5>
           <div class="form-group">
@@ -284,8 +284,8 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
 
-        <div class="card-footer bg-dark border-secondary text-right">
-          <button type="submit" class="btn btn-gold px-4">
+        <div class="card-footer bg-light text-dark border-light text-right">
+          <button type="submit" class="btn btn-primary px-4">
             <i class="fas fa-save mr-1"></i> Save Global Settings &amp; Footer
           </button>
         </div>
