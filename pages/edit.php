@@ -110,7 +110,7 @@ require_once __DIR__ . '/../includes/header.php';
           <span class="badge badge-secondary ml-2">Slug: <?= e($slug) ?></span>
         </div>
         <div>
-          <a href="https://myeventure.in<?= $slug === 'home' ? '' : '/' . e($slug) ?>" target="_blank" class="btn btn-sm btn-outline-warning">
+          <a href="https://www.myeventure.in<?= $slug === 'home' ? '' : '/' . e($slug) ?>" target="_blank" class="btn btn-sm btn-outline-primary">
             <i class="fas fa-external-link-alt mr-1"></i> Preview on Website
           </a>
         </div>
